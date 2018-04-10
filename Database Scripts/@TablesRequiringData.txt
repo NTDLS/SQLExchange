@@ -1,0 +1,3 @@
+dbo.ClientVersions
+dbo.Company
+dbo.CompanySchedules

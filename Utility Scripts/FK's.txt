@@ -1,0 +1,29 @@
+ALTER TABLE CompanySchedules
+ADD CONSTRAINT FK_CompanySchedules_Company_Key_Companys_ID FOREIGN KEY (Company_Key)
+    REFERENCES Companys (ID)
+GO
+
+ALTER TABLE CompanyStats
+ADD CONSTRAINT FK_CompanyStats_Company_Key_Companys_ID FOREIGN KEY (Company_Key)
+    REFERENCES Companys (ID)
+GO
+
+ALTER TABLE CompanyUsers
+ADD CONSTRAINT FK_CompanyUsers_Company_Key_Companys_ID FOREIGN KEY (Company_Key)
+    REFERENCES Companys (ID)
+GO
+
+ALTER TABLE CompanyAdminContacts
+ADD CONSTRAINT FK_CompanyAdminContacts_Company_Key_Companys_ID FOREIGN KEY (Company_Key)
+    REFERENCES Companys (ID)
+GO
+
+ALTER TABLE CompanyAdminContacts
+ADD CONSTRAINT FK_CompanyAdminContacts_AdminContact_Key_AdminContacts_ID FOREIGN KEY (AdminContact_Key)
+    REFERENCES AdminContacts (ID)
+GO
+
+ALTER TABLE TableDumpLog
+ADD CONSTRAINT FK_TableDumpLog_Company_Key_Company_ID FOREIGN KEY (Company_Key)
+    REFERENCES Companys (ID)
+GO

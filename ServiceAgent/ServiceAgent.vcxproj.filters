@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SourceFiles">
+      <UniqueIdentifier>{424031da-4101-446d-8d16-5589d594d4f6}</UniqueIdentifier>
+      <Extensions>c;cpp;lib</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{a99ac3da-62f7-4c43-b5d0-38d4f109c4d7}</UniqueIdentifier>
+      <Extensions>res;rc;ico;bmp</Extensions>
+    </Filter>
+    <Filter Include="Classes &amp; Libraries">
+      <UniqueIdentifier>{ec96b93b-0729-4381-9593-a0c937e04b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes &amp; Libraries\CCmdLine">
+      <UniqueIdentifier>{230336c6-c51c-4bd9-864a-90593e95b216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes &amp; Libraries\CMemPool">
+      <UniqueIdentifier>{b6ade7dd-6d19-432c-80fc-4f28792b7ded}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes &amp; Libraries\Debug">
+      <UniqueIdentifier>{3a363883-75fe-4e07-bc7f-969c71e3be08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes &amp; Libraries\NSWFL">
+      <UniqueIdentifier>{5aa5b2b4-2a24-4454-8eed-e1158917317a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes &amp; Libraries\CTrayIcon">
+      <UniqueIdentifier>{01f7dd28-69c8-4e2b-aac9-f83d70d0525e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Entry.Cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Init.Cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_Conversion.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_DateTime.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_File.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_KeyGeneration.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_ListBox.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_ListView.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_Math.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_Memory.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_Menu.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_Registry.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_String.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_System.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_Types.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\NSWFL\NSWFL_Windows.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\Debug\Debug.Cpp">
+      <Filter>Classes &amp; Libraries\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\CTrayIcon\CTrayIcon.Cpp">
+      <Filter>Classes &amp; Libraries\CTrayIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\CMemPool\CMemPool.Cpp">
+      <Filter>Classes &amp; Libraries\CMemPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\%40Libraries\CCmdLine\CCmdLine.Cpp">
+      <Filter>Classes &amp; Libraries\CCmdLine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Entry.H">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Init.H">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\resource.h">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL.h">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_Conversion.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_DateTime.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_File.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_KeyGeneration.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_ListBox.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_ListView.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_Math.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_Memory.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_Menu.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_Registry.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_String.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_System.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_Types.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\NSWFL\NSWFL_Windows.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\Debug\Debug.H">
+      <Filter>Classes &amp; Libraries\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\CTrayIcon\CTrayIcon.H">
+      <Filter>Classes &amp; Libraries\CTrayIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\CMemPool\CMemPool.H">
+      <Filter>Classes &amp; Libraries\CMemPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\%40Libraries\CCmdLine\CCmdLine.H">
+      <Filter>Classes &amp; Libraries\CCmdLine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon2.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Resources\Running.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Resources\Stopped.ico">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\ServiceAgent.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

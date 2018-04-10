@@ -1,0 +1,581 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASH              BITMAP                  "Splash.bmp"
+IDB_ALERTDLGSKIN        BITMAP                  "AlertDlgSkin.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HANDCURSOR          CURSOR                  "handcurs.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON                    "MainIcon.ico"
+IDI_STOP                ICON                    "Stop.ico"
+IDI_START               ICON                    "Start.ico"
+IDI_SMCPU               ICON                    "SmCPU.ico"
+IDI_ACCOUNT             ICON                    "Account.ico"
+IDI_ADVANCED            ICON                    "Advanced.ico"
+IDI_CPUSELECT           ICON                    "CPUSelect.ico"
+IDI_CRYPTO              ICON                    "Crypto.ico"
+IDI_GENERAL             ICON                    "General.ico"
+IDI_SCHEDULE            ICON                    "Schedule.ico"
+IDI_SECURITY            ICON                    "Security.ico"
+IDI_SERVER              ICON                    "Server.ico"
+IDI_SQLSETTING          ICON                    "SQL.ico"
+IDI_INDEXSQL            ICON                    "IndexSQL.ico"
+IDI_PASSWORD            ICON                    "Password.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SERVERDLGMENU MENU 
+BEGIN
+    POPUP "Server"
+    BEGIN
+        MENUITEM "System Statistics",           ID_SERVER_SYSTEMSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "Start",                       ID_SERVER_START
+        MENUITEM "Stop",                        ID_SERVER_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID_SERVER_CLOSE
+    END
+    POPUP "Settings"
+    BEGIN
+        MENUITEM "Settings",                    ID_SETTINGS_SETTINGS
+        MENUITEM "Open Console",                ID_SETTINGS_OPENCONSOLE
+        MENUITEM SEPARATOR
+        MENUITEM "Debug Mode",                  ID_SETTINGS_DEBUGMODE
+        MENUITEM "Clear Statistics",            ID_SETTINGS_CLEARSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "Set Password",                ID_SETTINGS_SETGUIPWD
+    END
+    POPUP "Replication"
+    BEGIN
+        MENUITEM "Setup New Database",          ID_REPLICATION_SETUPNEWDATABASE
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,6,8
+ PRODUCTVERSION 1,0,6,8
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40000L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Provides clients with secure high performance database replication over TCP/IP."
+            VALUE "CompanyName", "NetworkDLS"
+            VALUE "FileDescription", "SQL Replication Server"
+            VALUE "FileVersion", "1.0.6.8"
+            VALUE "InternalName", "SQLEServer"
+            VALUE "LegalCopyright", "Copyright © 2010 NetworkDLS."
+            VALUE "OriginalFilename", "SQLEServer.exe"
+            VALUE "ProductName", "SQLExchange Server"
+            VALUE "ProductVersion", "1.0.6.8"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SYSSTATS DIALOGEX 0, 0, 292, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Page Faults:",-1,11,19,40,8
+    LTEXT           "Memory Used:",-1,11,31,46,8
+    LTEXT           "Peak Memory Used:",-1,141,31,65,8
+    LTEXT           "Peak Paged Pool Usage:",-1,141,43,81,8
+    LTEXT           "Paged Pool Usage:",-1,11,43,62,8
+    LTEXT           "Peak NP Pool Usage:",-1,141,55,70,8
+    LTEXT           "NP Pool Usage:",-1,11,55,52,8
+    LTEXT           "Pagefile Usage:",-1,11,67,51,8
+    LTEXT           "Peak Pagefile Usage:",-1,141,67,70,8
+    LTEXT           "1099511627776",ID_PAGEFAULTS,74,19,58,8
+    LTEXT           "1099511627776",ID_MEMORYUSED,74,31,58,8
+    LTEXT           "1099511627776",ID_PAGEDPOOLUSAGE,74,43,58,8
+    LTEXT           "1099511627776",ID_NPPOOLUSAGE,74,55,58,8
+    LTEXT           "1099511627776",ID_PAGEFILEUSAGE,74,67,58,8
+    LTEXT           "1099511627776",ID_PEAKMEMUSAGE,224,31,58,8
+    LTEXT           "1099511627776",ID_PEAKPAGEDPOOLUSAGE,224,43,58,8
+    LTEXT           "1099511627776",ID_PEAKNPPOOLUSAGE,224,55,58,8
+    LTEXT           "1099511627776",ID_PEAKPAGEFILEUSAGE,224,67,58,8
+    GROUPBOX        "Application Memory Usage Statistics",-1,7,7,278,76
+END
+
+IDD_STATUSDLG DIALOGEX 0, 0, 238, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Please wait...",IDC_STATTEXT,7,7,223,11
+    CONTROL         "",IDC_STATPROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,7,21,223,15
+    PUSHBUTTON      "Cancel",IDC_CANCEL,179,41,52,15
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 267, 80
+STYLE DS_SYSMODAL | DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         117,IDC_STATIC,"Static",SS_BITMAP,0,0,267,80
+    CONTROL         "Progress1",IDC_SPLASHPROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,104,69,143,6
+    RTEXT           "IDC_VERSIONTAG",IDC_VERSIONTAG,77,2,186,8
+END
+
+IDD_SERVERTAB DIALOGEX 0, 0, 253, 184
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_LISTENPORT,11,62,123,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAXCONNECTS,12,88,123,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDD_NEXTCLIENTID,11,130,123,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMPRESSMETHOD,12,156,123,91,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Listen Port:",IDC_STATIC,11,52,40,8
+    LTEXT           "Max. Connections",IDC_STATIC,11,78,58,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,39,244,1
+    ICON            IDI_SERVER,IDC_STATIC,8,7,21,20
+    LTEXT           "Server settings",IDC_STATIC,36,14,187,8
+    GROUPBOX        "Server settings",IDC_STATIC,7,43,133,64
+    GROUPBOX        "Advanced",IDC_STATIC,7,111,133,65
+    LTEXT           "Next Client ID:",IDC_STATIC,11,120,46,8
+    LTEXT           "Compression Method:",IDC_STATIC,12,146,69,8
+END
+
+IDD_SECURITYTAB DIALOGEX 0, 0, 253, 212
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_AUTHSTRING,9,64,200,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_AUTHKEY,9,90,200,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_ENCRYPTKEYLEN,9,116,200,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,39,244,1
+    ICON            IDI_SECURITY,IDC_STATIC,8,7,21,20
+    LTEXT           "Server / client security",IDC_STATIC,36,14,187,8
+    LTEXT           "Authentication string:",IDC_STATIC,9,54,200,8
+    LTEXT           "Authentication key:",IDC_STATIC,9,80,199,8
+    GROUPBOX        "Server / Client",IDC_STATIC,5,43,213,94
+    LTEXT           "Encryption key length:",IDC_SQLSERVER,9,106,200,8
+    EDITTEXT        IDC_LOCALCRYPTKEY,9,160,200,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_ADMINPASSWORD,9,186,200,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "Local encryption key:",IDC_STATIC,9,150,68,8
+    GROUPBOX        "Local security",IDC_STATIC,5,140,214,66
+    LTEXT           "Administration password:",IDC_STATIC,9,176,78,8
+END
+
+IDD_PROCESSORSTAB DIALOGEX 0, 0, 253, 241
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_CPUS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,5,58,235,116
+    CONTROL         "Enable thread priority boost?",IDC_THREADBOOST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,191,115,12
+    CONTROL         "Enable process priority boost?",IDC_PROCESSBOOST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,204,115,12
+    CONTROL         "Use lightweight thread pooling?",IDC_USENTFIBERS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,217,115,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,39,244,1
+    ICON            IDI_CPUSELECT,IDC_STATIC,8,8,21,20
+    LTEXT           "System Processor Settings",IDC_STATIC,36,14,187,8
+    LTEXT           "Processors available to SQL Exchange:",IDC_STATIC,5,47,235,10
+    GROUPBOX        "Threading",IDC_STATIC,5,180,126,56
+    LTEXT           "Generic CPU Configuration",IDC_CPUDESCR,56,26,191,8
+END
+
+IDD_NETLOGO DIALOGEX 0, 0, 273, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IDD_NETLOGO"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_OKBUTTON,220,69,50,14
+    ICON            "",IDC_ABOUTICON,9,7,20,20
+    LTEXT           "IDC_APPNAME",IDC_APPNAME,84,7,159,8
+    LTEXT           "IDC_APPVERSION",IDC_APPVERSION,84,17,159,8
+    LTEXT           "IDC_APPCOPYRIGHT",IDC_APPCOPYRIGHT,44,53,192,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,40,63,234,1
+    LTEXT           "IDC_BUILDTIMEDATE",IDC_BUILDTIMEDATE,84,27,159,8
+    LTEXT           "www.NetworkDLS.com",IDC_NETLINK,84,37,159,8
+    LTEXT           "Web site:",IDC_STATIC,44,37,31,8
+    LTEXT           "Application:",IDC_STATIC,44,7,38,8
+    LTEXT           "Version:",IDC_STATIC,44,17,26,8
+    LTEXT           "Build:",IDC_STATIC,44,27,18,8
+END
+
+IDD_MONITOR DIALOGEX 0, 0, 416, 193
+STYLE DS_SETFONT | DS_3DLOOK | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+MENU IDR_SERVERDLGMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_USAGEGRAPH,"Static",SS_GRAYRECT | SS_SUNKEN | WS_BORDER,7,7,402,179
+END
+
+IDD_MAIN DIALOGEX 0, 0, 440, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+MENU IDR_SERVERDLGMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LOGLIST,3,124,137,60,LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATICFRAME,3,61,284,51,NOT WS_GROUP,WS_EX_CLIENTEDGE
+    LTEXT           "Connections:",IDC_STATIC,8,13,42,8
+    LTEXT           "Total Connects:",IDC_STATIC,8,23,51,8
+    LTEXT           "Errors:",IDC_STATIC,8,43,21,8
+    LTEXT           "Warnings:",IDC_STATIC,8,33,33,8
+    LTEXT           "(n/a)",IDC_CONNECTIONS,61,13,60,8
+    LTEXT           "(n/a)",IDC_TOTALCONNECTS,61,23,60,8
+    LTEXT           "(n/a)",IDC_ERRORS,61,43,60,8
+    LTEXT           "(n/a)",IDC_WARNINGS,61,33,60,8
+    GROUPBOX        "Statistics",IDC_STATIC,3,3,121,54
+    CONTROL         "",IDC_USAGEGRAPH,"Static",SS_GRAYRECT | SS_SUNKEN | WS_BORDER,125,7,288,51
+END
+
+IDD_INDEXDATABASE DIALOGEX 0, 0, 253, 246
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_SQLSERVER,11,64,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SQLDRIVER,11,90,127,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SQLUSERNAME,11,134,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SQLPASSWORD,11,160,127,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Use integrated security?",IDC_USETRUSTEDCONN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,177,92,10
+    EDITTEXT        IDC_SQLPORT,11,214,127,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Use TCP/IP connection?",IDC_USESQLTCPIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,230,96,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,39,244,1
+    ICON            IDI_INDEXSQL,IDC_STATIC,8,7,21,20
+    LTEXT           "Index Database",IDC_STATIC,36,14,187,8
+    LTEXT           "SQL Server:",IDC_STATIC,11,54,40,8
+    LTEXT           "SQL Driver:",IDC_STATIC,11,80,38,8
+    LTEXT           "SQL Username:",IDC_STATIC,11,124,51,8
+    LTEXT           "SQL Password:",IDC_STATIC,11,150,50,8
+    GROUPBOX        "SQL Server",IDC_STATIC,6,43,143,67
+    LTEXT           "SQL Port:",IDC_STATIC,11,204,32,8
+    GROUPBOX        "SQL Security",IDC_STATIC,6,114,143,76
+    GROUPBOX        "Advanced",IDC_STATIC,6,193,143,50
+END
+
+IDD_GENERALTAB DIALOGEX 0, 0, 253, 134
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Static",IDC_PRODUCTTEXT,76,43,171,8
+    LTEXT           "Static",IDC_VERSIONTEXT,76,54,171,8
+    LTEXT           "Static",IDC_BUILDDATETEXT,76,65,171,8
+    LTEXT           "Static",IDC_OSTEXT,76,87,171,8
+    LTEXT           "Static",IDC_MEMORYTEXT,76,98,171,8
+    LTEXT           "Static",IDC_PROCESORSTEXT,76,109,171,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,39,244,1
+    ICON            IDI_GENERAL,IDC_STATIC,8,8,21,20
+    LTEXT           "General settings",IDC_STATIC,36,14,187,8
+    LTEXT           "Product:",IDC_STATIC,7,43,28,8
+    LTEXT           "Product Version:",IDC_STATIC,7,54,53,8
+    LTEXT           "Operating System:",IDC_STATIC,7,87,58,8
+    LTEXT           "OS Memory:",IDC_STATIC,7,98,40,8
+    LTEXT           "Processors:",IDC_STATIC,7,109,38,8
+    LTEXT           "Built Date",IDC_STATIC,7,65,32,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,123,244,1
+    LTEXT           "Expires On:",IDC_STATIC,7,76,37,8
+    LTEXT           "Static",IDC_EXPIREDATE,76,76,171,8
+END
+
+IDD_CREATENEWDB DIALOGEX 0, 0, 208, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMPANYACCT,7,18,194,91,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_BACKUPNAME,7,51,194,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATAFILELOC,7,77,194,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOGFILELOC,7,103,194,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DBO,7,129,138,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Create",IDC_CREATE,150,149,51,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,92,149,51,14
+    LTEXT           "Original database backup file: (Relative to SQL Server)",IDC_STATIC,7,41,175,8
+    LTEXT           "Mutual Database Owner",IDC_STATIC,7,119,117,8
+    LTEXT           "New database data file location: (Relative to SQL Server)",IDC_STATIC,7,67,194,8
+    LTEXT           "Company Account:",IDC_STATIC,7,9,61,8
+    LTEXT           "New database log file location: (Relative to SQL Server)",IDC_STATIC,7,93,194,8
+END
+
+IDD_CLIENTDBSTAB DIALOGEX 0, 0, 253, 246
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_SQLSERVER,11,64,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SQLDRIVER,11,90,127,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SQLUSERNAME,11,134,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SQLPASSWORD,11,160,127,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Use integrated security?",IDC_USETRUSTEDCONN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,177,92,10
+    EDITTEXT        IDC_SQLCUSTPORT,11,214,127,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Use TCP/IP connection?",IDC_USESQLTCPIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,230,96,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,39,244,1
+    ICON            IDI_SQLSETTING,IDC_STATIC,8,7,21,20
+    LTEXT           "Client databases",IDC_STATIC,36,14,187,8
+    LTEXT           "SQL Server:",IDC_STATIC,11,54,40,8
+    LTEXT           "SQL Driver:",IDC_STATIC,11,80,38,8
+    LTEXT           "SQL Username:",IDC_STATIC,11,124,51,8
+    LTEXT           "SQL Password:",IDC_STATIC,11,150,50,8
+    GROUPBOX        "SQL Server",IDC_STATIC,6,43,143,67
+    GROUPBOX        "SQL Security",IDC_STATIC,6,114,143,76
+    GROUPBOX        "Advanced",IDC_STATIC,6,193,143,50
+    LTEXT           "SQL Port:",IDC_STATIC,11,204,32,8
+END
+
+IDD_ASKPWD DIALOGEX 0, 0, 238, 78
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PASSWORD,50,23,168,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Ok",IDC_CMDOK,168,44,50,14
+    PUSHBUTTON      "Cancel",IDC_CMDCANCEL,113,44,50,14
+    ICON            IDI_PASSWORD,IDC_STATIC,17,21,20,20
+    GROUPBOX        "Enter the Server Password to continue",IDC_STATIC,8,8,221,62
+END
+
+IDD_ALERT DIALOGEX 0, 0, 143, 139
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         116,IDC_ALERTSKIN,"Static",SS_BITMAP,0,0,143,139
+    CONTROL         "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",IDC_ALERTCAPTION,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,4,3,121,12
+    PUSHBUTTON      "Acknowledge",IDC_ALERTBUTTON1,10,114,56,16
+    PUSHBUTTON      "AltFunction",IDC_ALERTBUTTON2,77,114,56,16,NOT WS_VISIBLE
+    LTEXT           "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",IDC_ALERTMESSAGE,8,24,129,73,SS_NOPREFIX
+    CONTROL         "10",IDC_ALERTTIMER,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,126,3,12,12,WS_EX_RIGHT
+END
+
+IDD_ADVANCEDTAB DIALOGEX 0, 0, 253, 259
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Cache log file?",IDC_CACHELOGFILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,54,106,12
+    CONTROL         "Retry transfer of corrupt files when initializing database?",IDC_RTOFDWI,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,66,211,12
+    CONTROL         "Auto start server when service is started?",IDC_AUTORUN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,78,211,12
+    CONTROL         "Visually alert logged on user on all errors?",IDC_ALERTONERRORS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,90,211,12
+    CONTROL         "Visually alert logged on user on all warnings?",IDC_ALERTONWARNING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,102,211,12
+    CONTROL         "Show splash screen?",IDC_SHOWSPLASHSCREEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,114,211,12
+    CONTROL         "Allow off-line data processing?",IDC_OFFLINEPROCESSING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,126,211,12
+    EDITTEXT        IDC_HASHTIMEOUT,13,155,102,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAXINACTIVITY,119,155,102,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SQL_DATA_LOC,13,183,199,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_DAT_FOLDER,216,183,16,14
+    EDITTEXT        IDC_SQL_LOG_LOC,13,211,199,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_LOG_FOLDER,216,211,16,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,39,244,1
+    ICON            IDI_ADVANCED,IDC_STATIC,8,8,20,20
+    LTEXT           "Advanced / Miscellaneous settings",IDC_STATIC,36,14,187,8
+    GROUPBOX        "Misc. Settings",IDC_STATIC,5,42,244,217
+    LTEXT           "SQL data file location:",IDC_STATIC,13,172,70,8
+    LTEXT           "Hash timeout: (seconds)",IDC_STATIC,13,144,77,8
+    LTEXT           "SQL log file location:",IDC_STATIC,13,200,66,8
+    LTEXT           "Max Inactivity (seconds):",IDC_STATIC,119,144,79,8
+    EDITTEXT        IDC_TEMPDIR,13,239,199,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_TEMP_FOLDER,216,239,17,14
+    LTEXT           "Temporary directory:",IDC_STATIC,13,228,65,8
+END
+
+IDD_SETGUIPWD DIALOGEX 0, 0, 238, 102
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PASSWORD1,50,23,168,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD2,50,40,168,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Ok",IDC_CMDOK,168,74,50,14
+    PUSHBUTTON      "Cancel",IDC_CMDCANCEL,109,74,50,14
+    GROUPBOX        "Set and Confirm the Server Password",IDC_STATIC,8,8,221,86
+    ICON            IDI_ACCOUNT,IDC_STATIC,17,20,20,20
+    LTEXT           "Password Strength:",IDC_STATIC,50,57,63,8
+    LTEXT           "Unacceptable",IDC_PWDWEIGHT,117,57,99,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_NETLOGO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_CREATENEWDB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_ASKPWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 229
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_ALERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_ADVANCEDTAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 249
+    END
+
+    IDD_SETGUIPWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 229
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 94
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLECAPTION        "SQL-Exchange Server"
+    IDS_FILEVERSION         "1.0.6.8"
+    IDS_APPCOPYRIGHT        "Copyright © 2010 NetworkDLS. All rights reserved."
+    IDS_REGISTRYKEY         "Software\\NetworkDLS\\SQL-Exchange\\Server"
+    IDS_EVENTNAME           "SQL-Exchange (Server)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
